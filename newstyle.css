@@ -1,0 +1,278 @@
+body {
+  background-color: #010206;
+  background-image: url(/ricefield.png);
+  background-repeat:no-repeat;
+  background-position:bottom;
+  background-size: contain;
+  font-family: 'Bellefair', serif;
+  font-family: 'Crimson Text', serif;
+  color:#d9d9d9;
+}
+
+
+main {
+  padding: 25px;
+  margin:10px auto;
+  width:50%;
+  text-indent: 30px;
+  text-align:justify;
+  font-style: italic;
+  background-color:#eaeaea;
+  color:#000;
+}
+
+
+
+.scroll{
+  width:90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px dotted #eaeaea;
+  overflow: scroll;
+  height: 400px;
+}
+
+img{
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+
+}
+
+h3 {
+  font-style: italic;
+  text-transform: lowercase;
+  font-family: Courier;
+  font-size: 1.5rem;
+  text-align:center;
+}
+
+a{
+  color: #d22d2d;
+  font-family: Courier;
+  text-decoration: none;
+}
+
+.left{
+  float:left;
+  max-width:40%;
+  padding-right:15px;
+}
+
+.right{
+  float:right;
+  padding: 10px 0 0 10px;
+  border-left: 1px dotted #d8d8d8;
+  
+}
+
+.about{
+  text-align:left;
+  font-size: 0.9rem;
+      font-family: 'Bellefair', serif;
+
+    font-family: 'Crimson Text', serif;
+  margin:0 auto;
+  width:75%;
+  padding: 0px 25px 25px;
+}
+
+
+.date{
+  width:20%;
+  font-size: 1.1em;
+  vertical-align:text-top;
+  font-family: 'Bellefair', serif;
+  font-family: 'Crimson Text', serif;
+  padding: 30px 10px 30px 10px;
+}
+
+.blog{
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.1em;
+  padding: 30px 0px 60px 30px;
+  background-color: transparent;
+  max-width:80%;
+  font-family: 'Bellefair', serif;
+  font-family: 'Crimson Text', serif;
+  border-left: 1px dotted #eaeaea;
+}
+
+.subtitle{
+  color:#d8d8d8;
+}  
+
+#flex {
+  display: flex;
+            }
+
+.header{
+  background-color: #0e0e0f;
+  padding: 15px;
+  margin: 10px auto 0;
+  max-width: 800px;
+  font-size: 0.9rem;
+  display:flex;
+  flex-direction:row;
+}
+
+#site-title{
+  font-family: 'Syne Mono', monospace;
+  font-size:3rem;
+  vertical-align:bottom;
+  padding-left:10px;
+  word-wrap: break-word;
+  word-break:break-all;
+  text-shadow: 0 0 10px #d22d2d;
+  background-image:url("/download.png")
+}
+
+#nav1{
+  width:100%;
+}
+
+#title-img{
+  max-width:150px;
+  min-width:150px;
+}
+
+.container{
+  max-width:95%;
+  margin: 0 auto;
+}
+
+
+.main{
+  background-color: #0e0e0f;
+  padding: 15px;
+  margin: 0 auto;
+  order:1;
+  max-width: 800px;
+  font-size: 0.9rem;
+}
+
+
+.post{
+  background-color: #0e0e0f;
+  border: 2px double #0d0d0d;
+  padding: 15px;
+  float:left;
+  max-width: 800px;
+  font-size: 0.9rem;
+  border-top: 1px dotted #eaeaea;
+}
+
+.footer{
+  background-color: #0e0e0f;
+  padding: 15px;
+  margin: 0 auto 10px;
+  max-width: 800px;
+  font-size: 0.9rem;
+  text-align:center;
+}
+
+.scroll li {
+  margin:0;
+  margin-left:-40px;
+  list-style-type: none;
+  padding:10px;
+  text-decoration:none;
+  border-bottom: 1px dotted #eaeaea;
+}
+
+#nav1 a{
+  background-color: transparent;
+	   border: 0px;
+	   display: block;
+	   line-height: 16px;
+	   margin: 2px;
+	   padding:0 5px 0 0;
+	   text-align: right;
+       text-decoration: none;
+	   text-transform: uppercase;
+}
+
+#nav1 a:active, #nav1 a:hover{
+  background-color: #595959;
+	   border: 0px;
+	   display: block;
+	   line-height: 16px;
+	   margin: 2px;
+	   padding:0 5px 0 0;
+	   text-align: right;
+	   text-decoration: none;
+}
+
+
+.subtitle {
+  font-style: italic;
+  text-transform: lowercase;
+  font-family: Courier;
+  font-size: 1.5rem;
+}
+
+.collapsible {
+  color: #a4a4a4;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: bold;
+  outline: none;
+}
+
+.collapsible:hover, .collapsible:active{
+  font-style: italic;
+}
+
+.content {
+  padding: 0;
+  display: none;
+  font-size:0.9rem;
+  background-color: transparent;
+}
+
+@media (max-width: 600px){
+  
+  #title-img, #deadguy{
+  display:none;
+}
+}
+
+@media (max-width: 430px) {
+    
+.scroll{
+  overflow:visible;
+  height: auto;
+}
+
+.container{
+  max-width:100%;
+}
+
+
+.left{
+  display:none;
+}
+
+.right{
+  float:none;
+  width:100%;
+}
+
+.header, .main, .footer{
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#title-img, #deadguy{
+  display:none;
+}
+
+}
+
